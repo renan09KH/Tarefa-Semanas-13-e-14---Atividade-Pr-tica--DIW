@@ -1,0 +1,257 @@
+body {
+    /* Estilo para o corpo da página */
+    background-color: black;
+}
+
+.foto-inicial1 {
+    /*border: 2px solid #f90808;*/
+    border-radius: 10px;
+    display: block;
+}
+
+img.foto-inicial2 {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+p.foto-inicial-texto2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.title {
+    /* Estilo para o título */
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 9px;
+}
+
+p {
+    /* Estilo para os parágrafos */
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+footer {
+    /* Estilo para o rodapé fixo */
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 9px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.personagens {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Permite que as imagens quebrem linha em telas menores */
+    margin: 25px;
+}
+
+.personagem {
+    text-align: center;
+}
+
+.personagem img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+p.nome-connor {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+p.nome-marcos {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+p.nome-kara {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+p.sinopse {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+/* Estilo para telas pequenas, mobile-first */
+body {
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* A partir de telas médias, como tablets */
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+/* A partir de telas grandes, como desktops */
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+        padding: 30px;
+    }
+}
+
+img.foto-inicial1 {
+    width: 100%;
+    height: auto;
+}
+
+
+html {
+    /* Estilo para o elemento html */
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    /* Estilo para o container centralizado */
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    height: 100vh; /* ocupa altura total da tela */
+}
+
+.barradepesquisa1 {
+    padding: 10px;
+    font-size: 16px;
+    /*border: 2px solid #f90808;*/
+    border-radius: 5px;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.barradepesquisa2 {
+    padding: 10px;
+    font-size: 16px;
+    /*border: 2px solid #f90808;*/
+    justify-content: flex-start;
+    display: flex;
+    margin-right: 20px;
+}
+
+.alinhasbarrasdepesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid #ff0000; borda caixa de pesquisa*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    padding: 1px;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: #f90808 2px solid;*/
+}
+
+.icone img {
+    display: block;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px rgb(2, 36, 255);
+    transform: translate(2.5mm); /* mexer na posição do icone */
+}
+
+.cardgeral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Espaço entre os cards */
+    margin: 20px;
+    /* border: #f90808 2px solid; */
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card1,
+.card2,
+.card3 {
+    font-size: 25px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    color: #000000;
+    /* border: #ff0000 2px solid; */
+}

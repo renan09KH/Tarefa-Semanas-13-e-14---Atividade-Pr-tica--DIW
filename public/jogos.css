@@ -1,0 +1,211 @@
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden; /* ✅ Remove rolagem horizontal */
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+/* Título principal */
+.titulo-inicial {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(245, 241, 241);
+    border: solid 2px rgb(131, 2, 251);
+    text-shadow: 7px 5px 5px rgba(132, 0, 255, 0);
+    padding: 12px;
+}
+
+/* Título de cada card */
+.filme-card h1,
+[class^="filme"] h1 {
+    font-size: 20px;
+    color: white;
+    margin: 12px 0;
+    padding: 0 10px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    white-space: normal;
+}
+
+/* Card da galeria */
+.galeria [class^="filme"] {
+    display: inline-block;
+    border: 2px solid rgb(132, 0, 255);
+    padding: 0;
+    margin: 10px;
+    line-height: 0;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 12px rgb(132, 0, 255);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 200ms ease, transform 150ms ease;
+    background-color: #121212;
+    width: 280px; /* ✅ Reduzido para caber melhor na tela */
+}
+
+/* Hover no card */
+.galeria [class^="filme"]:hover {
+    box-shadow: 0 18px 40px rgba(132, 0, 255, 0.65);
+    transform: translateY(-6px);
+}
+
+/* Imagem do card */
+.galeria [class^="filme"] img {
+    display: block;
+    width: 100%;
+    max-width: 280px; /* ✅ Reduzido para evitar corte e rolagem */
+    height: 400px;     /* ✅ Altura ajustada para manter proporção */
+    object-fit: cover;
+    border: none;
+    margin: 0 auto;
+}
+
+/* Layout da galeria */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    justify-items: center;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria [class^="filme"] {
+        width: 90%;
+    }
+
+    .galeria [class^="filme"] img {
+        height: auto;
+    }
+}
+
+/* Painel de detalhes */
+#detalhes-filme {
+    display: none;
+    position: fixed;
+    right: 24px;
+    top: 24px;
+    width: 320px;
+    background: rgba(18, 18, 18, 0.98);
+    color: #fff;
+    border: 1px solid rgba(132, 0, 255, 0.6);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+#detalhes-filme h2 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+#detalhes-filme p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+#detalhes-filme .detalhe-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+#detalhes-filme .detalhe-infos>div {
+    font-size: 14px;
+    color: #fffdfd;
+}
+
+#fechar-detalhes {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    #detalhes-filme {
+        left: 12px;
+        right: 12px;
+        top: 12px;
+        width: auto;
+    }
+}
+
+/* Ícone lateral */
+.icone1 img {
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px rgb(132, 0, 255);
+    float: none;
+}
+
+.titulo-inicial .icone1 {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 480px) {
+    .titulo-inicial {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .titulo-inicial .icone1 img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .titulo-inicial h1 {
+        font-size: 18px;
+    }
+
+    .titulo-inicial .icone1 {
+        left: 6px;
+    }
+}
+
+.titulo-inicial .botao-voltar {
+    text-shadow: #ffffff;
+}
+
+/* Carrossel */
+.carousel1slide {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid rgb(132, 0, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(132, 0, 255);
+    justify-content: left;
+}
+
+.carousel1slide img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    transition: transform 0.5s ease;
+}
+

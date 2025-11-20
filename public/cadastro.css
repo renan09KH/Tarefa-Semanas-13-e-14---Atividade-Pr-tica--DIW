@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(132, 0, 255, 0.6);
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgb(18, 18, 18);
+  border: 2px solid rgb(132, 0, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(132, 0, 255);
+  padding: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: rgb(245, 241, 241);
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(32, 32, 32);
+  border: 1px solid rgb(132, 0, 255);
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  background-color: rgb(132, 0, 255);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: rgba(132, 0, 255, 0.8);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
