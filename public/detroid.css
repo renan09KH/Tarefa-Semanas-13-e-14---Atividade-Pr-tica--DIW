@@ -1,12 +1,69 @@
 body {
-    /* Estilo para o corpo da página */
     background-color: black;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0;
 }
 
+/* Títulos */
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 9px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 9px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Parágrafos */
+p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+p.sinopse {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Nomes dos personagens */
+p.nome-connor,
+p.nome-marcos,
+p.nome-kara {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* Imagens */
 .foto-inicial1 {
-    /*border: 2px solid #f90808;*/
     border-radius: 10px;
     display: block;
+}
+
+img.foto-inicial1 {
+    width: 100%;
+    height: auto;
 }
 
 img.foto-inicial2 {
@@ -16,34 +73,114 @@ img.foto-inicial2 {
     border-radius: 10px;
 }
 
-p.foto-inicial-texto2 {
+/* Barra de pesquisa */
+.alinhasbarrasdepesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    padding: 1px;
+}
+
+.barradepesquisa1,
+.barradepesquisa2 {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.barradepesquisa1 {
+    justify-content: flex-end;
+}
+
+.barradepesquisa2 {
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+/* Ícone */
+.icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone img {
+    display: block;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 1px 1px 20px rgb(2, 36, 255);
+    transform: translate(2.5mm);
+}
+
+/* Cards de navegação */
+.cardgeral {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 1rem;
-}
-
-.title {
-    /* Estilo para o título */
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    letter-spacing: 9px;
-}
-
-p {
-    /* Estilo para os parágrafos */
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
     margin: 20px;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
 }
 
+.card1,
+.card2,
+.card3 {
+    font-size: 25px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgb(132, 0, 255);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
 
+.card1 a,
+.card2 a,
+.card3 a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px 16px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    background-color: rgba(132, 0, 255, 0.8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(132, 0, 255, 0.4);
+}
+
+/* Personagens */
+.personagens {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.personagem {
+    text-align: center;
+}
+
+.personagem img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
 footer {
-    /* Estilo para o rodapé fixo */
     bottom: 0;
     width: 100%;
     height: 60px;
@@ -62,88 +199,7 @@ footer {
     display: flex;
 }
 
-
-
-h1 {
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    letter-spacing: 9px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-
-.personagens {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    /* Permite que as imagens quebrem linha em telas menores */
-    margin: 25px;
-}
-
-.personagem {
-    text-align: center;
-}
-
-.personagem img {
-    width: 600px;
-    height: auto;
-    border-radius: 10px;
-}
-
-p.nome-connor {
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 10px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-
-}
-
-p.nome-marcos {
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 10px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-
-}
-
-p.nome-kara {
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 10px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-
-}
-
-p.sinopse {
-    font-weight: bold;
-    font-size: 50px;
-    margin-top: 10px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-
-}
-
-/* Estilo para telas pequenas, mobile-first */
-body {
-    font-size: 14px;
-    padding: 10px;
-}
-
-/* A partir de telas médias, como tablets */
+/* Responsividade */
 @media (min-width: 600px) {
     body {
         font-size: 16px;
@@ -151,107 +207,9 @@ body {
     }
 }
 
-/* A partir de telas grandes, como desktops */
 @media (min-width: 992px) {
     body {
         font-size: 18px;
         padding: 30px;
     }
-}
-
-img.foto-inicial1 {
-    width: 100%;
-    height: auto;
-}
-
-
-html {
-    /* Estilo para o elemento html */
-    height: 100%;
-    margin: 0;
-}
-
-.container {
-    /* Estilo para o container centralizado */
-    display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center; /* centraliza verticalmente */
-    height: 100vh; /* ocupa altura total da tela */
-}
-
-.barradepesquisa1 {
-    padding: 10px;
-    font-size: 16px;
-    /*border: 2px solid #f90808;*/
-    border-radius: 5px;
-    justify-content: flex-end;
-    display: flex;
-}
-
-.barradepesquisa2 {
-    padding: 10px;
-    font-size: 16px;
-    /*border: 2px solid #f90808;*/
-    justify-content: flex-start;
-    display: flex;
-    margin-right: 20px;
-}
-
-.alinhasbarrasdepesquisa {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    /* border: 2px solid #ff0000; borda caixa de pesquisa*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    padding: 1px;
-}
-
-.icone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*border: #f90808 2px solid;*/
-}
-
-.icone img {
-    display: block;
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 1px 1px 20px rgb(2, 36, 255);
-    transform: translate(2.5mm); /* mexer na posição do icone */
-}
-
-.cardgeral {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px; /* Espaço entre os cards */
-    margin: 20px;
-    /* border: #f90808 2px solid; */
-    height: auto;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.card1,
-.card2,
-.card3 {
-    font-size: 25px;
-    width: 300px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.card1:hover,
-.card2:hover,
-.card3:hover {
-    color: #000000;
-    /* border: #ff0000 2px solid; */
 }

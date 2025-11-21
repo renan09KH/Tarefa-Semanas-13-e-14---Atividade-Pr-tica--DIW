@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Jogos</title>
   <link rel="stylesheet" href="/public/jogos.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="jogos">
@@ -15,18 +16,15 @@
       <img src="./imagens detroid/zazu in fnaf2.jpeg" alt="ícone de filme" width="100" height="100">
     </div>
 
-    <!-- Botão Voltar - mantido na posição original -->
     <div class="botao-voltar">
       <a href="./detroid.html">Voltar</a>
     </div>
 
-    <!-- Botão Estatísticas - na mesma posição que o voltar estava -->
     <div class="botao-estatisticas">
-      <a href="./estatisticas.html">Estatísticas</a>
+      <a href="#" id="btn-estatisticas">Estatísticas</a>
     </div>
-  </div> <!-- FECHAMENTO CORRETO DO titulo-inicial -->
+  </div>
 
-  <!--Galeria dos jogos (agora dinâmica)-->
   <div class="galeria" id="galeria"></div>
 
   <!-- Painel de detalhes -->
@@ -40,10 +38,28 @@
       <div class="detalhe-criador"></div>
       <div class="detalhe-categorias"></div>
     </div>
+    <div class="botao-de-excluir">
     <button id="excluir-jogo"
-      style="margin-top: 12px; background-color: rgb(132, 0, 255); color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer;">
-      Excluir Jogo
+     <h1>Excluir Jogo</h1>
     </button>
+    </div>
+  </aside>
+
+  <aside id="estatisticas-painel" class="detalhes-filme" aria-hidden="true" tabindex="-1">
+    <button id="fechar-estatisticas" aria-label="Fechar">×</button>
+    <h2 class="detalhe-titulo">Estatísticas dos Jogos</h2>
+    
+    <div class="estatisticas-container">
+      <div class="estatistica-item">
+        <h3>Distribuição por Categoria</h3>
+        <canvas id="categoriaChart"></canvas>
+      </div>
+      
+      <div class="estatistica-item">
+        <h3>Jogos por Ano de Lançamento</h3>
+        <canvas id="anoChart"></canvas>
+      </div>
+    </div>
   </aside>
 
   <script src="script.js"></script>
