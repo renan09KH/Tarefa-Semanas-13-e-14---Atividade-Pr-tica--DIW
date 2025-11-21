@@ -1,136 +1,53 @@
-# Tarefa-Semanas-11-e-12---Atividade-Pr-tica
+# Aluno: Renan Cauã Esteves Nolasco
+# Matricula: 900320
 
-Aluno: Renan Cauã Esteves Nolasco
-Matricula: 900320
-
-# tela de cadastro
-![alt text](<Captura de tela 2025-11-02 162518.png>)
+# Print
+![alt text](<Captura de tela 2025-11-20 213001.png>)
 
 # Oque fiz
-Fiz uma tela de cadastro aonde as informações cadastradas sobem e são adicionadas ao (jogos.html), as imagens tem que ser adicionadas manualmente, apos adicionar tem que alterar seu id e ele tem que dar continuidade a sequencia que ja esta la, fiz algumas correção de erro de formatação. A tela de cadastro não adicionei direcionador pois não achei necessario.
+Adicionei um sistema de estatisticas na pagina de jogos que mostra graficos em tempo real. Quando clica no botao "Estatisticas", abre um painel lateral com um grafico de pizza mostrando a distribuicao de jogos por categoria e um grafico de barras mostrando os jogos por ano de lancamento. Os dados sao buscados diretamente do JSON Server e os graficos atualizam automaticamente quando novos jogos sao cadastrados.
 
 # json atual (rodando via CMD)
 {
-  "filmes": [
-    {
-      "id": "1",
-      "titulo": "Hollow Knight",
-      "descricao": "Aventura metroidvania em um reino subterrâneo cheio de mistérios, combates precisos e exploração.",
-      "data_lancamento": "2017-02-24",
-      "idade_recomendada": "10+",
-      "criador": "Team Cherry",
-      "categoria": [
-        "Metroidvania",
-        "Ação",
-        "Indie"
-      ]
-    },
-    {
-      "id": "2",
-      "titulo": "Sekiro: Shadows Die Twice",
-      "descricao": "Jogo de ação/aventura com foco em combate de habilidade, ambientado no Japão feudal reimaginado.",
-      "data_lancamento": "2019-03-22",
-      "idade_recomendada": "16+",
-      "criador": "FromSoftware",
-      "categoria": [
-        "Ação",
-        "Aventura"
-      ]
-    },
-    {
-      "id": "3",
-      "titulo": "Batman: Arkham Knight",
-      "descricao": "A experiência final da trilogia Arkham com combate fluido, mundo aberto e história cinematográfica.",
-      "data_lancamento": "2015-06-23",
-      "idade_recomendada": "16+",
-      "criador": "Rocksteady Studios",
-      "categoria": [
-        "Ação",
-        "Aventura"
-      ]
-    },
-    {
-      "id": "4",
-      "titulo": "Spider-Man",
-      "descricao": "Jogo de ação e aventura em mundo aberto focado em combate fluido, exploração e uma narrativa original com Peter Parker em Nova York.",
-      "data_lancamento": "2018-09-07",
-      "idade_recomendada": "16+",
-      "criador": "Insomniac Games",
-      "categoria": [
-        "Ação",
-        "Aventura",
-        "Mundo Aberto"
-      ]
-    },
-    {
-      "id": "5",
-      "titulo": "Spider-Man: Miles Morales",
-      "descricao": "Continuação com foco em Miles Morales, com novos poderes e uma aventura ambientada durante o Natal em Manhattan nevada.",
-      "data_lancamento": "2020-11-12",
-      "idade_recomendada": "16+",
-      "criador": "Insomniac Games",
-      "categoria": [
-        "Ação",
-        "Aventura",
-        "Mundo Aberto"
-      ]
-    },
-    {
-      "id": "6",
-      "titulo": "Rainbow Six Siege",
-      "descricao": "Tático shooter em primeira pessoa com partidas multiplayer assimétricas focadas em trabalho em equipe e uso estratégico de operadores variados.",
-      "data_lancamento": "2015-12-01",
-      "idade_recomendada": "18+",
-      "criador": "Ubisoft Montreal",
-      "categoria": [
-        "Tático",
-        "FPS",
-        "Multiplayer"
-      ]
-    },
-    {
-      "id": "7",
-      "titulo": "Infamous Second Son",
-      "descricao": "Jogo de ação e aventura em mundo aberto com Delsin Rowe, que usa superpoderes derivados de materiais como fumaça e neon para combater inimigos em Seattle.",
-      "data_lancamento": "2014-03-21",
-      "idade_recomendada": "18+",
-      "criador": "Sucker Punch Productions",
-      "categoria": [
-        "Ação",
-        "Aventura",
-        "Mundo Aberto"
-      ]
-    },
-    {
-      "id": "8",
-      "titulo": "The Last of Us Part II",
-      "descricao": "Jogo de ação-aventura e survival horror com narrativa intensa, jogabilidade focada em furtividade e combate, explorando um mundo pós-apocalíptico.",
-      "data_lancamento": "2020-06-19",
-      "idade_recomendada": "18+",
-      "criador": "Naughty Dog",
-      "categoria": [
-        "Ação",
-        "Aventura",
-        "Survival Horror"
-      ]
-    },
-    {
-      "id": "9",
-      "titulo": "Minecraft",
-      "descricao": " Um jogo de mundo aberto onde você quebra e coloca blocos para construir qualquer coisa e sobreviver à noite. A liberdade é total.",
-      "data_lancamento": "2011-11-18",
-      "idade_recomendada": "Livre",
-      "criador": "Markus \"Notch\" Persson (Mojang)",
-      "categoria": [
-        "Sandbox",
-        "Sobrevivência",
-        "Construção",
-        "Aventura",
-        "Multiplayer"
-      ]
-    }
-  ]
+"filmes": [
+{
+"id": "1",
+"titulo": "Hollow Knight",
+"descricao": "Aventura metroidvania em um reino subterrâneo cheio de mistérios, combates precisos e exploração.",
+"data_lancamento": "2017-02-24",
+"idade_recomendada": "10+",
+"criador": "Team Cherry",
+"categoria": [
+"Metroidvania",
+"Ação",
+"Indie"
+]
+},
+{
+"id": "2",
+"titulo": "Sekiro: Shadows Die Twice",
+"descricao": "Jogo de ação/aventura com foco em combate de habilidade, ambientado no Japão feudal reimaginado.",
+"data_lancamento": "2019-03-22",
+"idade_recomendada": "16+",
+"criador": "FromSoftware",
+"categoria": [
+"Ação",
+"Aventura"
+]
+},
+{
+"id": "3",
+"titulo": "Batman: Arkham Knight",
+"descricao": "A experiência final da trilogia Arkham com combate fluido, mundo aberto e história cinematográfica.",
+"data_lancamento": "2015-06-23",
+"idade_recomendada": "16+",
+"criador": "Rocksteady Studios",
+"categoria": [
+"Ação",
+"Aventura"
+]
+}
+]
 }
 
-
-# Não recebi o link dessa aula pelo canva antão criei esse
+Nao recebi o link dessa aula pelo canva entao criei esse
